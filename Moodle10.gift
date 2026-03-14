@@ -1,0 +1,89 @@
+// Soal 1
+::Peran Auditor dalam CSA::
+Dalam pelaksanaan Control Self-Assessment (CSA), apa peran utama dari seorang auditor Sistem Informasi berdasarkan kerangka kerja tata kelola TI? {
+=Sebagai fasilitator independen yang membantu pemilik proses bisnis mendefinisikan dan menilai efektivitas kontrol mereka sendiri.#Tepat sekali! Dalam pendekatan CSA, kepemilikan kontrol tetap berada di tangan manajemen, sedangkan auditor hanya bertindak sebagai fasilitator yang memandu proses evaluasi.
+~Sebagai pembuat keputusan akhir dalam menentukan kontrol teknis mana yang harus diimplementasikan pada sistem operasional.#Kurang tepat. Manajemen operasional-lah yang bertanggung jawab dan membuat keputusan akhir atas kontrol, bukan auditor.
+~Sebagai pihak yang mengambil alih tanggung jawab manajemen atas pelaksanaan operasi bisnis sehari-hari agar bebas dari risiko.#Salah. Jika auditor mengambil alih tanggung jawab manajemen, hal tersebut akan melanggar prinsip independensi auditor secara fatal.
+~Sebagai pembuat kode program (programmer) untuk memperbaiki kelemahan kontrol aplikasi yang ditemukan selama penilaian.#Keliru. Auditor tidak boleh ikut merancang atau memperbaiki sistem yang diauditnya karena melanggar prinsip pemisahan tugas (segregation of duties).
+}
+
+// Soal 2
+::Fungsi Piagam Audit (Audit Charter)::
+Dokumen fundamental apa yang secara resmi menetapkan peran, tanggung jawab, independensi, serta kewenangan fungsi audit Sistem Informasi internal di dalam sebuah organisasi? {
+=Piagam Audit (Audit Charter) yang diotorisasi dan disetujui secara resmi oleh dewan direksi atau komite audit.#Benar! Audit Charter adalah "konstitusi" tertinggi yang secara resmi memberikan wewenang, ruang lingkup, dan jaminan independensi kepada fungsi audit di dalam organisasi.
+~Rencana Audit Tahunan (Annual Audit Plan) yang disetujui secara sepihak oleh manajer operasional IT.#Kurang tepat. Rencana audit tahunan berisi jadwal kegiatan audit, bukan dasar legal yang memberikan mandat kewenangan.
+~Buku Panduan Kontrol Internal (Internal Control Manual) yang diterbitkan oleh departemen keamanan siber.#Salah. Ini adalah dokumen pedoman operasional dari manajemen, bukan dokumen mandat untuk auditor.
+~Laporan Penilaian Risiko (Risk Assessment Report) bulanan yang dibuat oleh staf kepatuhan (compliance).#Keliru. Laporan risiko adalah hasil analisis berkala operasional, bukan piagam tata kelola fungsi audit.
+}
+
+// Soal 3
+::Kategori Kontrol Teknis (Logical Controls)::
+Berdasarkan klasifikasi kontrol dalam audit (manajemen, teknis, dan fisik), manakah dari pernyataan berikut yang paling tepat mendeskripsikan kontrol teknis (logical controls)? {
+=Kontrol yang memanfaatkan teknologi, perangkat keras, atau perangkat lunak untuk membatasi dan memantau akses, seperti penggunaan kata sandi dan sistem deteksi intrusi (IDS).#Tepat! Logical controls (kontrol logis/teknis) menggunakan sistem IT untuk mengelola dan membatasi akses ke dalam sistem dan data.
+~Kontrol yang berkaitan dengan operasi fungsi bisnis harian, seperti program pelatihan karyawan dan kebijakan pemisahan tugas (segregation of duties).#Ini adalah deskripsi untuk kontrol administratif atau kontrol manajemen (administrative/management controls).
+~Kontrol yang dipasang secara mekanis untuk membatasi akses fisik ke fasilitas krusial, seperti lencana akses pintar dan kamera CCTV beresolusi tinggi.#Ini adalah penjelasan dari kontrol fisik (physical controls), yang melindungi infrastruktur secara wujud nyata.
+~Kontrol yang berfokus semata-mata pada pelaporan keakuratan keuangan dan peninjauan kebijakan asuransi perusahaan.#Ini terlalu sempit dan lebih mengarah pada kontrol finansial bisnis, bukan definisi umum kontrol teknis IT.
+}
+
+// Soal 4
+::Tujuan Pengujian Kepatuhan (Compliance Testing)::
+Manakah dari pernyataan berikut yang paling akurat menjelaskan tujuan utama dilakukannya pengujian kepatuhan (compliance testing) oleh seorang auditor SI? {
+=Untuk menguji dan memastikan bahwa kontrol internal (seperti proses otorisasi) telah diimplementasikan dengan benar dan diterapkan secara konsisten.#Benar! Compliance testing bertujuan untuk membuktikan "apakah kontrol yang sudah dirancang benar-benar dipatuhi dan dijalankan?".
+~Untuk mengonfirmasi keakuratan nilai numerik, integritas data, atau saldo moneter akhir dalam sebuah basis data transaksi keuangan.#Ini adalah tujuan dari pengujian substantif (substantive testing), yang berfokus pada isi data, bukan kepatuhan kontrolnya.
+~Untuk menemukan bukti forensik digital atas insiden kecurangan (fraud) yang melibatkan manipulasi data oleh pihak manajemen tingkat atas.#Ini merupakan ranah investigasi khusus forensik atau fraud audit, bukan tujuan dari compliance testing yang bersifat reguler.
+~Untuk memulihkan sistem informasi dan operasional jaringan yang baru saja mengalami kegagalan sistem (system downtime) berskala besar.#Ini adalah fungsi dari pemulihan bencana (Disaster Recovery), yang merupakan tugas operasional IT, bukan tugas pengujian auditor.
+}
+
+// Soal 5
+::Konsep Sampling Atribut (Attribute Sampling)::
+Mengapa seorang auditor Sistem Informasi umumnya lebih memilih menggunakan teknik *attribute sampling* dibandingkan *variable sampling* ketika melaksanakan pengujian kepatuhan (compliance testing)? {
+=Karena attribute sampling dirancang untuk menilai tingkat kejadian suatu atribut (seperti ada atau tidaknya tanda tangan persetujuan) pada sebuah populasi.#Tepat! Attribute sampling bersifat biner (ya/tidak, patuh/tidak patuh), sehingga sangat ideal untuk menguji kepatuhan operasional.
+~Karena attribute sampling digunakan secara khusus untuk menghitung perkiraan nilai moneter atau estimasi kerugian finansial dari suatu kumpulan transaksi.#Ini adalah definisi yang tepat untuk variable sampling, bukan attribute sampling.
+~Karena attribute sampling akan secara otomatis membatalkan seluruh proses audit jika ditemukan satu saja kesalahan (error) pada data operasional.#Keliru. Menemukan satu kesalahan tidak membatalkan audit, melainkan akan dicatat sebagai deviasi dan diukur *error rate*-nya.
+~Karena attribute sampling merupakan metode non-statistik yang tidak memerlukan parameter probabilitas acak dari populasi dokumen yang diuji.#Salah. Attribute sampling merupakan salah satu metode baku dalam sampling statistik, bukan non-statistik.
+}
+
+// Soal 6
+::Karakteristik Agile Auditing::
+Jika dibandingkan dengan metodologi audit tradisional, bagaimana pendekatan *Agile Auditing* membedakan dirinya dalam hal komunikasi penyampaian hasil dengan *auditee* (pihak yang diaudit)? {
+=Agile Auditing melibatkan kolaborasi waktu-nyata (real-time) di mana auditee langsung diinformasikan mengenai temuan kontrol kelemahan agar perbaikan dapat dilakukan segera, tanpa harus menunggu draf laporan akhir.#Benar! Inti dari kerangka kerja Agile adalah umpan balik yang cepat, iteratif, dan nilai tambah yang instan bagi organisasi.
+~Agile Auditing sangat mengandalkan komunikasi satu arah secara formal di mana auditee hanya berhak menerima hasil temuan audit setelah rapat penutupan (closing meeting) benar-benar selesai.#Ini justru merupakan ciri khas dari metode audit tradisional (waterfall) yang sangat birokratis.
+~Agile Auditing meminimalisir keterlibatan auditee sepenuhnya selama tahap pengujian (fieldwork) untuk menjaga tingkat independensi yang mutlak dari tim audit.#Salah. Metodologi Agile sangat menuntut kolaborasi harian (daily stand-ups) antara auditor dan pihak yang diaudit.
+~Agile Auditing mengharuskan pihak auditee untuk menganalisa dan menulis laporan temuan risiko mereka sendiri sebelum secara resmi diserahkan kepada tim auditor.#Keliru. Auditor tetap pihak yang bertanggung jawab melakukan evaluasi objektif dan mendokumentasikan temuan.
+}
+
+// Soal 7
+::Tanggung Jawab Auditor terhadap Kecurangan (Fraud)::
+Mengingat kompleksitas lingkungan TI, bagaimana standar audit ISACA mengharapkan seorang auditor SI untuk menyikapi potensi risiko kecurangan (fraud) selama masa penugasan? {
+=Auditor tidak menjamin deteksi semua fraud secara absolut, namun diwajibkan untuk memiliki kehati-hatian profesional (due care) dan harus senantiasa waspada terhadap indikator kecurangan.#Luar biasa! Auditor bertindak sebagai pemberi *reasonable assurance*, harus waspada terhadap *red flags*, tetapi secara logis tidak mungkin menjamin ketiadaan fraud 100%.
+~Auditor memiliki tanggung jawab hukum secara penuh untuk segera menghentikan kegiatan operasional bisnis auditee sesaat setelah dicurigai adanya anomali transaksi keuangan.#Salah. Menghentikan operasional adalah kewenangan manajemen eksekutif atau aparat penegak hukum, bukan wewenang auditor.
+~Auditor diperbolehkan untuk mengabaikan indikator kecurangan karena proses investigasi forensik dan hukum murni merupakan ranah tanggung jawab dari kepolisian.#Keliru. Mengabaikan indikator kecurangan (*red flags*) merupakan pelanggaran berat terhadap standar kehati-hatian profesional (due professional care) ISACA.
+~Auditor diharapkan untuk secara aktif merancang dan memasang sistem jebakan digital (honeypots) pada jaringan produksi auditee untuk menangkap karyawan yang tidak jujur.#Salah. Merancang *honeypots* adalah tugas operasional tim Blue Team (Cybersecurity), jika auditor melakukannya akan melanggar pemisahan tugas.
+}
+
+// Soal 8
+::Struktur Kerangka Kerja ITAF::
+Dalam kerangka kerja ISACA ITAF, standar audit dibagi menjadi tiga kategori utama yaitu Umum (General), Kinerja (Performance), dan Pelaporan (Reporting). Fokus dari area Standar Kinerja (Performance Standards) adalah untuk mengatur tentang: {
+=Cara pelaksanaan teknis dari penugasan audit, termasuk tahapan perencanaan, penentuan ruang lingkup (scoping), serta manajemen risiko dan pengumpulan bukti.#Tepat! Standar Kinerja (seri 1200) mengatur hal-hal teknis mengenai bagaimana pekerjaan lapangan dan perencanaan audit dilakukan.
+~Prinsip-prinsip moral dasar yang memandu perilaku profesional auditor sehari-hari, termasuk aturan etika, independensi, dan objektivitas profesi.#Ini adalah fokus dari kategori Standar Umum (General Standards - seri 1000).
+~Format dokumen spesifik dan persetujuan saluran distribusi yang wajib digunakan saat mempresentasikan laporan audit final kepada dewan direksi.#Ini diatur di dalam kategori Standar Pelaporan (Reporting Standards - seri 1400).
+~Daftar denda, hukuman, serta sanksi administratif yang akan diberikan oleh dewan sertifikasi apabila seorang auditor melanggar kode etik ISACA.#Standar kerangka kerja ITAF tidak mengatur teknis denda; masalah hukuman ditangani oleh komite etika independen ISACA.
+}
+
+// Soal 9
+::Transisi Pengujian Audit (Audit Testing)::
+Jika dari hasil penilaian tahap awal (preliminary review) seorang auditor SI mendeteksi bahwa kontrol internal keamanan pada suatu aplikasi ternyata sangat rapuh dan tidak dapat diandalkan, langkah logis apa yang paling tepat untuk dilakukan selanjutnya? {
+=Beralih untuk melakukan pengujian substantif (substantive testing) guna memverifikasi apakah telah terjadi kesalahan, anomali, atau manipulasi pada data transaksi yang sesungguhnya.#Sangat analitis! Bila "gemboknya rusak" (compliance gagal), auditor harus masuk untuk memeriksa "apakah barang di dalamnya hilang" (substantive testing).
+~Menghentikan pemeriksaan terhadap aplikasi tersebut dan mengalihkan fokus audit kepada aplikasi atau departemen lain yang terbukti memiliki kontrol tata kelola yang jauh lebih matang.#Salah. Auditor tidak boleh lari dari sistem yang rapuh; kelemahan tersebut justru harus dievaluasi dampaknya dan dilaporkan sebagai temuan berisiko tinggi.
+~Terus melakukan pengujian kepatuhan (compliance testing) dengan jumlah sampel yang ditingkatkan drastis untuk membuktikan secara statistik betapa buruknya kontrol aplikasi tersebut.#Memperbesar sampel pada pengujian kepatuhan menjadi sia-sia dan buang waktu jika auditor sudah mengetahui secara pasti bahwa kontrolnya rusak/tidak ada.
+~Segera mengakses basis data dan mengubah parameter konfigurasi sistem operasi untuk menambal kelemahan keamanan kritis yang ditemukan demi melindungi aset perusahaan.#Pelanggaran fatal! Auditor tidak pernah diizinkan mengubah sistem operasional perusahaan karena dapat merusak independensi dan stabilitas sistem.
+}
+
+// Soal 10
+::Penggunaan Discovery Sampling::
+Berdasarkan metodologi pengumpulan bukti, pada situasi spesifik seperti apa seorang auditor SI akan merasa paling tepat untuk menerapkan metode *discovery sampling*? {
+=Ketika tujuan utama dari proses audit tersebut adalah untuk mencari kejadian anomali yang tingkat frekuensinya sangat langka namun berdampak besar, seperti upaya menyingkap insiden kecurangan (fraud).#Benar! Discovery sampling adalah model statistik khusus yang digunakan auditor ketika mereka ingin "menemukan" setidaknya satu kasus kejadian yang sangat serius (seperti fraud) dalam data.
+~Ketika auditor membutuhkan teknik akurat untuk memperkirakan nilai total dari saldo moneter gabungan pada jutaan transaksi harian yang dicatat oleh bank berskala global.#Untuk mengestimasi nilai kuantitatif atau finansial dalam jumlah besar, auditor seharusnya menggunakan metode variable sampling.
+~Ketika auditor ingin melakukan verifikasi administrasi untuk membuktikan apakah lebih dari 90% karyawan organisasi telah lulus modul pelatihan keamanan siber wajib tahunan.#Untuk mengukur tingkat persentase kepatuhan (contohnya >90%), metode yang paling pas adalah attribute sampling.
+~Ketika auditor hanya perlu menilai kelancaran latensi jaringan operasional harian secara umum tanpa memedulikan anomali atau pengecualian kecil yang mungkin terjadi sesekali.#Evaluasi latensi jaringan tidak menggunakan teknik sampling dokumen audit, melainkan menggunakan perangkat lunak pemantauan jaringan (Network Monitoring Tools).
+}

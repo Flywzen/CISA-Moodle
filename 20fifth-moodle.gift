@@ -1,0 +1,179 @@
+// Soal 41
+::Domain 3 - Tujuan Business Case::
+Sebelum sebuah proyek TI berskala besar disetujui, manajemen biasanya mewajibkan penyusunan *Business Case*. Dari perspektif tata kelola, apa pemahaman utama mengenai tujuan dokumen ini? {
+=Untuk menjustifikasi investasi proyek secara komersial dengan membandingkan perkiraan biaya, risiko, dan manfaat bisnis (ROI) yang akan diperoleh organisasi.#Tepat sekali! *Business Case* adalah proposal bisnis yang menjawab pertanyaan: "Apakah investasi TI ini sepadan dengan nilai bisnis yang akan kita dapatkan?".
+~Untuk mendokumentasikan setiap baris kode pemrograman (source code) yang akan ditulis oleh para pengembang perangkat lunak.#Salah. *Business Case* disusun jauh sebelum penulisan kode dimulai; ini adalah dokumen bisnis, bukan dokumen teknis pemrograman.
+~Untuk berfungsi sebagai kontrak hukum final yang mengikat antara perusahaan dengan vendor penyedia layanan internet.#Keliru. Kontrak dengan vendor disebut SLA atau Perjanjian Pembelian, sedangkan *Business Case* adalah dokumen justifikasi internal untuk persetujuan anggaran.
+~Untuk menguraikan secara rinci spesifikasi arsitektur *router* dan *switch* yang akan dibeli di kuartal depan.#Salah. Detail spesifikasi teknis perangkat keras masuk dalam dokumen Desain Teknis, bukan ranah evaluasi komersial *Business Case*.
+}
+
+// Soal 42
+::Domain 3 - Operational Feasibility::
+Dalam tahap studi kelayakan (*Feasibility Study*), terdapat beberapa dimensi yang dinilai, salah satunya adalah *Operational Feasibility* (Kelayakan Operasional). Apa yang secara esensial dianalisis pada dimensi ini? {
+=Mengevaluasi apakah sistem yang diusulkan benar-benar dapat diintegrasikan ke dalam rutinitas kerja harian dan apakah pengguna (end-users) bersedia serta mampu mengoperasikannya.#Benar! Sistem yang sangat canggih sekalipun akan gagal jika secara operasional karyawan menolak menggunakannya atau alur kerjanya terlalu rumit (resistensi pengguna).
+~Mengevaluasi apakah perusahaan memiliki cukup uang tunai di bank untuk membayar lisensi perangkat lunak tahunan.#Ini adalah definisi dari Kelayakan Ekonomi (*Economic Feasibility*).
+~Mengevaluasi apakah teknologi yang dibutuhkan untuk membangun sistem tersebut sudah tersedia dan teruji di pasaran saat ini.#Ini merujuk pada Kelayakan Teknis (*Technical Feasibility*).
+~Mengevaluasi apakah sistem yang akan dibangun berpotensi melanggar undang-undang privasi data internasional.#Ini adalah ranah dari Kelayakan Hukum dan Kepatuhan (*Legal/Compliance Feasibility*).
+}
+
+// Soal 43
+::Domain 3 - Metodologi Agile vs Waterfall::
+Bila dibandingkan dengan model *Waterfall* yang tradisional, bagaimana Anda memahami perbedaan filosofi mendasar dari metodologi *Agile* dalam menangani perubahan kebutuhan (*requirements*)? {
+=Agile memandang perubahan sebagai hal yang wajar dan beradaptasi melalui iterasi siklus pendek (sprint) dengan umpan balik pengguna yang berkelanjutan, sedangkan Waterfall sangat kaku dan menuntut semua kebutuhan dikunci di awal proyek.#Tepat! *Agile* merangkul perubahan di tengah jalan demi nilai bisnis, sementara *Waterfall* menganggap perubahan di tengah jalan sebagai gangguan yang merusak jadwal.
+~Agile mewajibkan seluruh perancangan sistem selesai 100% sebelum proses *coding* dimulai, sedangkan Waterfall membiarkan *coding* dilakukan tanpa rencana sama sekali.#Sangat terbalik. *Waterfall* yang mewajibkan desain 100% selesai di awal, sedangkan *Agile* merancang secara bertahap seiring berjalannya iterasi.
+~Agile sama sekali tidak memerlukan partisipasi dari pengguna bisnis, sedangkan Waterfall mengharuskan pengguna bisnis memimpin tim *programmer*.#Keliru. Justru metodologi *Agile* menuntut partisipasi harian/berkelanjutan yang sangat erat dari pengguna bisnis (*Product Owner*).
+~Agile adalah metode yang hanya boleh digunakan untuk membuat perangkat keras (hardware), sedangkan Waterfall khusus untuk perangkat lunak (software).#Salah. Kedua metodologi ini utamanya lahir dan banyak digunakan untuk siklus hidup pengembangan perangkat lunak (SDLC).
+}
+
+// Soal 44
+::Domain 3 - Tujuan Prototyping::
+Dalam pengembangan perangkat lunak, tim sering kali menggunakan teknik *Prototyping*. Dalam situasi analisis kebutuhan seperti apa pendekatan ini paling tepat dan bermanfaat? {
+=Ketika pengguna bisnis merasa kesulitan untuk mendeskripsikan kebutuhan sistem mereka secara spesifik dan abstrak di atas kertas, sehingga mereka membutuhkan model visual awal untuk berinteraksi.#Benar! *Prototyping* adalah "membuat contoh kasar". Sangat berguna ketika pengguna tidak tahu persis apa yang mereka mau sampai mereka melihat bentuk visualnya.
+~Ketika proyek sudah berada di tahap akhir rilis dan membutuhkan sertifikasi keamanan internasional dari auditor eksternal.#Salah. *Prototyping* dilakukan di awal (fase desain/kebutuhan), bukan di tahap akhir menjelang rilis.
+~Ketika tim pengembangan ingin menyembunyikan arsitektur basis data yang sebenarnya dari kejaran peretas jaringan (hacker).#Keliru. *Prototyping* adalah teknik analisis antarmuka dan kebutuhan fungsional, bukan teknik penyamaran keamanan siber (*obfuscation*).
+~Ketika perusahaan ingin memastikan bahwa perangkat lunak tersebut dapat berjalan di atas sistem operasi dari tahun 1980-an.#Salah. Pengujian kompatibilitas sistem warisan (*legacy*) tidak relevan dengan tujuan utama dari pembuatan *prototype* antarmuka.
+}
+
+// Soal 45
+::Domain 3 - Project Management: Critical Path::
+Dalam manajemen proyek TI menggunakan diagram PERT/CPM, pemahaman analitis apa yang diwakili oleh "Jalur Kritis" (*Critical Path*)? {
+=Rangkaian aktivitas yang memiliki durasi total terpanjang di dalam proyek, yang berarti penundaan pada aktivitas mana pun di jalur ini akan secara otomatis menunda keseluruhan tenggat waktu penyelesaian proyek.#Luar biasa! Jalur kritis adalah urutan tugas yang *slack time* (waktu toleransi kelonggarannya) adalah nol. Terlambat 1 hari di jalur ini = proyek terlambat 1 hari.
+~Rangkaian aktivitas yang memakan anggaran finansial paling sedikit sehingga sering diabaikan oleh manajer proyek.#Sangat keliru. Jalur kritis menyoroti waktu/durasi penyelesaian yang sangat krusial, bukan mengindikasikan kegiatan berbiaya murah yang boleh diabaikan.
+~Sebuah lintasan evakuasi fisik terdekat dari ruang peladen (server room) menuju pintu keluar darurat saat terjadi kebakaran.#Salah. Ini adalah istilah keselamatan fasilitas fisik gedung, bukan istilah penjadwalan dalam Manajemen Proyek perangkat lunak.
+~Satu-satunya jalur komunikasi rahasia antara Manajer Proyek dan Dewan Direksi yang dienkripsi secara militer.#Keliru. Ini mengada-ada. *Critical Path Method* (CPM) murni adalah instrumen matematis untuk menghitung estimasi waktu penyelesaian proyek.
+}
+
+// Soal 46
+::Domain 3 - Software Escrow Agreement::
+Organisasi Anda membeli aplikasi komersial kritis dari sebuah vendor kecil. Auditor menyarankan agar dibuat *Software Escrow Agreement*. Apa tujuan utama dari perjanjian tata kelola pihak ketiga ini? {
+=Untuk melindungi investasi perusahaan dengan menitipkan kode sumber (source code) aplikasi pada agen pihak ketiga yang netral, sehingga perusahaan tetap bisa memelihara sistem jika vendor tersebut bangkrut atau berhenti beroperasi.#Tepat sekali! Jika vendor gulung tikar, Anda tidak akan terjebak dengan perangkat lunak "mati". Agen *escrow* akan menyerahkan kode sumbernya kepada Anda secara legal.
+~Untuk memastikan vendor tidak akan pernah menaikkan harga lisensi perangkat lunak di masa depan secara sepihak.#Salah. Perjanjian perlindungan harga biasanya diatur dalam kontrak SLA atau *Price Lock Agreement*, bukan lewat mekanisme *Escrow*.
+~Untuk menghancurkan salinan data transaksi perusahaan secara otomatis jika terjadi pengambilalihan paksa oleh perusahaan kompetitor.#Sangat keliru. *Escrow* bertujuan menyelamatkan akses ke kode sumber, bukan bertindak sebagai program sabotase penghancur data otomatis.
+~Untuk menjamin bahwa perangkat lunak yang dibeli tersebut akan selalu bebas dari segala jenis virus komputer dan *malware*.#Salah. Kualitas keamanan kode atau ketiadaan *malware* dijamin melalui audit keamanan kode dan SLA, bukan melalui penitipan *Escrow*.
+}
+
+// Soal 47
+::Domain 3 - User Acceptance Testing (UAT)::
+Di akhir fase pengembangan, dilakukan pengujian *User Acceptance Testing* (UAT). Sebagai calon auditor, bagaimana Anda membedakan UAT dari fase pengujian lainnya? {
+=UAT dilaksanakan langsung oleh pengguna akhir bisnis (end-users) dalam lingkungan simulasi nyata untuk memverifikasi bahwa sistem telah benar-benar memenuhi kebutuhan operasional bisnis mereka sebelum diterima secara resmi.#Benar! UAT adalah ketuk palu terakhir dari pihak bisnis. Fokusnya bukan mencari *bug* teknis kode, tapi menjawab: "Apakah sistem ini bisa dipakai kerja oleh staf kami?".
+~UAT murni dilakukan oleh pemrogram senior untuk mengecek validitas algoritma dan integrasi basis data tanpa melibatkan campur tangan staf operasional non-TI.#Keliru. Jika dilakukan oleh pemrogram, itu disebut Pengujian Sistem (*System Testing*) atau Pengujian Integrasi, bukan pengujian penerimaan pengguna.
+~UAT adalah proses otomatis yang dijalankan oleh robot AI setiap kali server mengalami penurunan kecepatan latensi internet.#Salah. UAT adalah pengujian manual berbasis skenario bisnis oleh manusia (pengguna akhir), bukan skrip monitoring jaringan *real-time*.
+~UAT bertujuan semata-mata untuk mengukur daya tahan fisik perangkat keras (*hardware*) peladen jika dijalankan selama 100 jam tanpa henti di ruang yang panas.#Ini adalah Pengujian Beban Fisik (*Stress Testing* fasilitas), sama sekali tidak berkaitan dengan fungsionalitas aplikasi di mata pengguna bisnis.
+}
+
+// Soal 48
+::Domain 3 - Strategi Implementasi (Parallel Run)::
+Manajemen memilih strategi *Parallel Run* (Sistem Paralel) saat bermigrasi dari sistem akuntansi lama ke sistem baru. Secara analitis, apa keunggulan sekaligus kelemahan utama dari pendekatan ini? {
+=Keunggulannya adalah risiko kegagalan yang paling rendah karena sistem lama masih ada sebagai cadangan penuh; namun kelemahannya adalah biaya dan beban kerja yang berlipat ganda karena pengguna harus memasukkan data di dua sistem sekaligus.#Luar biasa! Strategi ini sangat aman (kalau sistem baru mati, sistem lama masih jalan). Tapi sangat boros waktu dan biaya karena staf bekerja ganda (*double entry*).
+~Keunggulannya adalah waktu implementasi yang sangat kilat, namun kelemahannya adalah semua data lama akan otomatis terhapus tanpa sisa.#Sangat terbalik. Implementasi kilat yang langsung mematikan sistem lama adalah karakteristik strategi *Direct Cutover* (Big Bang), bukan paralel.
+~Keunggulannya adalah menghilangkan sama sekali kebutuhan untuk melatih staf, sedangkan kelemahannya sistem sering kali terserang virus ganda.#Keliru. *Parallel run* justru butuh pelatihan ekstra karena staf harus mahir di kedua sistem. Tidak ada korelasinya dengan serangan virus ganda.
+~Keunggulannya adalah biaya perangkat keras menjadi sangat murah, namun kelemahannya direksi harus turun tangan mengetik kode program secara manual.#Salah. Perangkat keras justru harus disiapkan ganda (untuk sistem lama dan baru), sehingga biayanya mahal, dan direksi tidak pernah ditugaskan mengetik kode aplikasi operasional.
+}
+
+// Soal 49
+::Domain 3 - Strategi Implementasi (Direct Cutover / Big Bang)::
+Sebaliknya, jika manajemen memutuskan untuk menggunakan strategi implementasi *Direct Cutover* (penggantian langsung/Big Bang), profil risiko seperti apa yang paling tepat dipahami oleh auditor TI? {
+=Risikonya sangat tinggi karena jika sistem baru ternyata mengalami kegagalan fatal setelah diaktifkan, organisasi tidak memiliki jaring pengaman sistem lama untuk kembali beroperasi secara instan (Fall-back).#Tepat! *Big Bang* berarti mematikan *switch* sistem lama di hari Jumat, dan menyalakan sistem baru di hari Senin. Sangat berisiko tinggi jika ternyata sistem baru *crash* total.
+~Risikonya paling rendah dari semua metode karena sistem baru telah dilengkapi dengan kecerdasan buatan (AI) yang secara magis memperbaiki dirinya sendiri tanpa henti.#Salah. Tidak ada sistem operasional bisnis yang benar-benar bisa memperbaiki kegagalan fatal arsitektural secara instan tanpa intervensi. Ini adalah harapan palsu, bukan manajemen risiko.
+~Risiko utamanya hanyalah biaya lembur karyawan yang membengkak karena mereka harus melakukan penginputan (*data entry*) di dua layar komputer secara bersamaan.#Keliru. Penginputan di dua layar bersamaan adalah masalah dari metode *Parallel Run*, bukan *Direct Cutover* di mana layar lama sudah dimatikan total.
+~Risikonya terbatas hanya pada masalah estetika, yaitu keluhan karyawan tentang warna antarmuka pengguna (*User Interface*) yang kurang menarik.#Sangat keliru. Risiko kegagalan sistem inti dapat melumpuhkan seluruh transaksi perusahaan (berhentinya bisnis), bukan sekadar masalah estetika tampilan yang sepele.
+}
+
+// Soal 50
+::Domain 3 - Post-Implementation Review (PIR)::
+Sekitar 3 hingga 6 bulan setelah sistem baru resmi digunakan, praktik tata kelola mengharuskan adanya *Post-Implementation Review* (PIR). Apa fokus analitis utama dari dilakukannya PIR ini? {
+=Untuk mengevaluasi secara retrospektif apakah sistem baru tersebut benar-benar menghasilkan manfaat bisnis (ROI) seperti yang dijanjikan dalam *Business Case*, serta mengidentifikasi *lessons learned* untuk proyek masa depan.#Benar! PIR bukan sekadar mencari kesalahan pemrogram, tapi menjawab ke manajemen: "Apakah janji investasi miliaran kita di awal proyek benar-benar tercapai hari ini?".
+~Untuk memberikan sanksi denda potong gaji kepada pengguna akhir (end-user) yang masih sering melakukan kesalahan dalam menggunakan menu aplikasi.#Salah. PIR bertujuan mengevaluasi proses proyek dan keselarasan manfaat sistem, bukan sebagai ajang pengadilan internal untuk menghukum staf tingkat bawah.
+~Untuk memulai kembali proses penulisan kode perangkat lunak dari titik nol jika ditemukan satu saja *bug* tampilan (interface).#Keliru. *Bug* pasca-rilis ditangani oleh tim pemeliharaan operasional lewat penambalan (*patching*), bukan mereset miliaran baris kode dari nol secara ekstrem.
+~Untuk meminta persetujuan formal dari pemerintah pusat bahwa sistem perusahaan tersebut telah didaftarkan ke dalam bursa saham global.#Salah. Laporan evaluasi proyek internal (PIR) tidak ada hubungannya dengan pendaftaran regulasi Initial Public Offering (IPO) di bursa saham eksternal.
+}
+
+// Soal 51
+::Domain 3 - Regression Testing::
+Setiap kali tim pengembang merilis pembaruan perbaikan fitur (*patch/update*) ke dalam sistem, auditor mengharuskan dilakukannya *Regression Testing*. Mengapa pengujian spesifik ini sangat mutlak diperlukan? {
+=Untuk memastikan bahwa penambahan fitur atau perbaikan kode yang baru disuntikkan tersebut tidak secara tidak sengaja merusak atau mematikan modul-modul fungsi lama yang sebelumnya sudah berjalan dengan baik.#Sangat analitis! Seringkali memperbaiki satu bagian kode justru merusak logika bagian lain. *Regression test* memastikan aplikasi tidak "mengalami kemunduran" kualitas akibat *update*.
+~Untuk menekan mundur (regress) tanggal rilis aplikasi ke bulan sebelumnya di dalam dokumen kontrak agar vendor terhindar dari denda keterlambatan SLA.#Sangat salah. Manipulasi tanggal kontrak adalah tindakan penipuan dokumentasi, bukan metodologi pengujian mutu perangkat lunak.
+~Untuk menguji apakah antarmuka pengguna dapat beradaptasi secara otomatis pada layar telepon seluler pintar model lama (vintage).#Keliru. Pengujian adaptasi layar disebut Pengujian Kompatibilitas/Responsivitas (*Responsiveness Test*), bukan *Regression Testing*.
+~Untuk mengembalikan pangkalan data (*database*) ke status kosong melompong seperti saat pertama kali dibeli dari pabrik vendor.#Salah. Itu adalah proses inisialisasi atau pemformatan ulang perangkat keras, yang justru merusak operasional, bukan langkah pengujian kode *software*.
+}
+
+// Soal 52
+::Domain 3 - Black Box Testing::
+Dalam strategi pengujian perangkat lunak, terdapat pendekatan *Black Box Testing*. Karakteristik pemahaman apa yang membedakan pengujian ini? {
+=Penguji (tester) tidak memiliki pengetahuan atau akses sama sekali ke dalam struktur kode sumber (source code) internal; mereka hanya memberikan *input* data dan mengevaluasi apakah sistem menghasilkan *output* yang sesuai spesifikasi fungsional.#Tepat! Layaknya kotak hitam misterius, penguji tidak peduli *bagaimana* kode itu ditulis, yang penting "kalau saya klik beli, apakah keranjang belanja bertambah?". Ini fokus pada fungsi luar.
+~Penguji diwajibkan untuk memeriksa baris demi baris logika pemrograman untuk menemukan algoritma matematika yang tidak efisien yang mungkin memperlambat sistem.#Ini adalah deskripsi murni dari pendekatan *White Box Testing*, kebalikan langsung dari kotak hitam.
+~Pengujian ini hanya boleh dilakukan di malam hari saat pusat data (Data Center) dalam keadaan gelap gulita tanpa lampu penerangan.#Pemahaman harfiah yang sangat keliru. Istilah "Black Box" adalah metafora ketidaktahuan atas isi struktur aplikasi, bukan instruksi fisik memadamkan lampu ruangan peladen.
+~Pengujian yang dirancang khusus untuk mendeteksi perangkat keras (hardware) yang dicat dengan warna hitam gelap oleh pihak pabrikan demi alasan estetika.#Sangat salah. Pengujian SDLC membahas fungsionalitas logika perangkat lunak virtual, sama sekali bukan pemeriksaan inspeksi cat warna casing fisik komputer luar.
+}
+
+// Soal 53
+::Domain 3 - White Box Testing::
+Di sisi lain, auditor juga mengevaluasi pelaksanaan *White Box Testing* yang biasanya dilakukan oleh tim pengembang/QA. Apa fokus analitis utama dari pengujian "Kotak Putih" ini? {
+=Penguji memiliki visibilitas penuh ke dalam struktur internal, arsitektur, dan kode pemrograman (source code); fokus utamanya adalah memverifikasi kelancaran jalur eksekusi logika, kondisi perulangan (loops), dan keamanan struktur kode itu sendiri.#Benar! Karena "kotak ini tembus pandang", penguji memeriksa kualitas "mesin" di dalamnya. Tujuannya memastikan kode efisien, aman, dan logika percabangan tidak ada yang buntu.
+~Pengujian ini dilakukan secara buta di mana penguji dilarang keras untuk melihat panduan manual instalasi perangkat lunak.#Ini lebih menyerupai variasi dari *Black Box* atau Pengujian Interaksi Pengguna Kasual, bukan *White Box*.
+~Fokus utamanya adalah menilai warna putih pada kontras antarmuka grafis (*Graphic User Interface*) demi memastikan kenyamanan mata pengguna saat membaca layar.#Keliru. Ini adalah aspek desain antarmuka visual (UI Design), bukan pengujian integritas struktur kode komputasi *White Box*.
+~Pengujian ini khusus dilakukan oleh dewan direksi untuk memeriksa kualitas dan ketebalan kertas warna putih yang digunakan saat mencetak laporan keuangan kuartalan.#Sangat keliru. Domain ini murni tentang metodologi rekayasa perangkat lunak aplikasi operasional, bukan kualitas material logistik kertas di mesin pencetak (*printer*).
+}
+
+// Soal 54
+::Domain 3 - Pemisahan Lingkungan (Separation of Environments)::
+Prinsip keamanan standar mewajibkan adanya pemisahan logis dan fisik antara Lingkungan Pengembangan (*Development*), Pengujian (*Testing*), dan Produksi (*Production*). Mengapa arsitektur pemisahan ini sangat fundamental bagi auditor? {
+=Untuk mencegah risiko di mana *programmer* secara tidak sengaja (atau sengaja) menyuntikkan kode yang belum teruji, modifikasi eksperimental, atau data *dummy* langsung ke dalam sistem produksi yang dapat merusak kelangsungan bisnis waktu-nyata.#Luar biasa! Inilah "dinding api operasional". Jika *programmer* bereksperimen langsung di sistem yang sedang dipakai melayani pelanggan (*Production*), satu kesalahan sintaks dapat mematikan seluruh bisnis hari itu juga.
+~Agar perusahaan dapat membeli lebih banyak server perangkat keras dan menghabiskan sisa anggaran akhir tahun TI yang belum terpakai dengan segera.#Sangat salah. Pemisahan lingkungan dilandasi murni oleh kebutuhan manajemen risiko integritas dan ketersediaan, bukan trik untuk pemborosan pembuangan anggaran korporasi.
+~Untuk memastikan bahwa data rahasia kartu kredit pelanggan nyata (*real customer data*) dapat diakses secara bebas oleh pemrogram *freelance* dari rumah mereka demi kecepatan perbaikan.#Sangat fatal. Justru pemisahan lingkungan memastikan data produksi (data asli nasabah) TIDAK boleh disalin dan diakses ke lingkungan pengembangan demi alasan privasi dan keamanan tingkat tinggi.
+~Agar staf pengembangan TI memiliki tiga meja kerja fisik yang terpisah di dalam kantor agar mereka merasa lebih nyaman bekerja sendirian.#Keliru. "Lingkungan" dalam hal ini merujuk pada pemisahan arsitektur sistem jaringan server (*Logical Environment*), bukan jarak kubikel tata letak meja kayu di ruang kantor (ergonomi fisik).
+}
+
+// Soal 55
+::Domain 3 - Request for Proposal (RFP)::
+Pada tahap akuisisi (*Acquisition Phase*), organisasi sering kali menerbitkan dokumen yang disebut *Request for Proposal* (RFP) kepada publik atau vendor. Apa pemahaman manajerial terkait peran strategis dokumen ini? {
+=RFP adalah dokumen resmi yang menjabarkan persyaratan bisnis dan teknis secara rinci untuk mengundang para vendor pihak ketiga agar mengajukan penawaran solusi komprehensif, harga, dan arsitektur yang paling kompetitif kepada perusahaan.#Tepat! RFP adalah cara perusahaan berkata ke pasar: "Ini masalah kami, ini spesifikasi yang kami mau. Silakan vendor berlomba memberikan penawaran solusi dan harga terbaik untuk kami!".
+~RFP adalah dokumen hukum sepihak dari vendor yang memaksa perusahaan untuk membeli produk perangkat lunak mereka tanpa boleh membandingkannya dengan vendor lain.#Salah. RFP justru diinisiasi oleh pembeli (perusahaan), bukan vendor, agar pembeli dapat membandingkan puluhan tawaran vendor secara objektif.
+~RFP adalah daftar hadir absensi harian yang wajib diisi oleh staf pemrogram setiap pagi sebelum mereka diizinkan menyentuh papan ketik komputer kantor.#Keliru. Ini adalah instrumen pengadaan vendor pihak ketiga, tidak ada relevansinya sama sekali dengan masalah kedisiplinan logistik administratif harian karyawan internal.
+~RFP adalah dokumen manual instruksi singkat yang memberikan petunjuk kepada administrator jaringan tentang cara mengganti kata sandi *router* Wi-Fi di lantai direksi.#Salah. Dokumentasi prosedur teknis konfigurasi sandi dikategorikan sebagai Prosedur Operasi Standar (*Standard Operating Procedure*), bukan dokumen pengadaan penawaran proyek (*Request for Proposal*).
+}
+
+// Soal 56
+::Domain 3 - Manajemen Perubahan (Change Management)::
+Mengapa kerangka kerja Tata Kelola TI mewajibkan bahwa semua permohonan modifikasi sistem operasional pasca-rilis harus dikendalikan melalui sebuah prosedur *Change Management* (Manajemen Perubahan) yang ketat? {
+=Untuk memastikan bahwa seluruh modifikasi telah dievaluasi dampaknya, diotorisasi secara formal oleh manajemen bisnis, diuji secara menyeluruh di lingkungan terpisah, dan didokumentasikan riwayatnya sebelum disuntikkan ke lingkungan produksi.#Benar! Perubahan sembarangan adalah penyebab nomor satu matinya server. *Change management* memastikan tidak ada "perbaikan diam-diam" di malam hari tanpa izin dan tanpa pengujian dampak terhadap kelangsungan sistem lain.
+~Untuk menjamin bahwa setiap kali sistem diubah, seluruh pengguna bisnis secara paksa harus membeli komputer jinjing (laptop) bermerek baru dari pasar.#Sangat keliru. Peningkatan kode sistem fungsional tidak serta merta mewajibkan peremajaan masal perangkat keras fisik pada sisi staf kecuali terdapat perubahan arsitektur minimum (*Minimum System Requirements*).
+~Untuk menciptakan birokrasi red-tape yang mustahil ditembus demi mencegah departemen TI melakukan inovasi perbaikan selamanya di perusahaan tersebut.#Salah. Tujuan utamanya mengelola risiko operasional terburuk, bukan untuk mematikan semangat inovasi perbaikan kualitas dengan sengaja secara absolut.
+~Untuk secara otomatis mengubah (change) bahasa antarmuka pemrograman dasar dari Java menjadi Python setiap hari Minggu malam demi menghindari kebosanan pemrogram.#Sangat salah. Perubahan kerangka bahasa pemrograman *Core* (*Tech Stack Migration*) adalah proyek masif tahunan, bukan fitur penyegaran otomatis mingguan penghilang rasa jenuh.
+}
+
+// Soal 57
+::Domain 3 - Function Point Analysis (FPA)::
+Saat merencanakan jadwal dan anggaran proyek SDLC, manajer proyek dapat menggunakan teknik *Function Point Analysis* (FPA). Dari kacamata analitis, apa dimensi esensial yang sebenarnya diukur oleh alat ukur estimasi ini? {
+=FPA mengukur ukuran kompleksitas perangkat lunak berdasarkan jumlah fitur dan fungsionalitas bisnis yang langsung dirasakan serta digunakan oleh pengguna akhir (input, output, antarmuka), bukan berdasarkan jumlah baris kode (Lines of Code) yang dipecahkan.#Tepat! 1000 baris kode yang ditulis oleh pemrogram amatir mungkin hanya berisi fungsionalitas sepele, sedangkan 100 baris kode oleh ahli bisa berisi fitur canggih. FPA mengukur "Apa fungsinya di mata user?", bukan panjang kodenya.
+~FPA secara eksklusif mengukur seberapa panas fluktuasi titik suhu panas (Fahrenheit Point) pada inti memori peladen fisik saat mengeksekusi komputasi kalkulasi tingkat dewa.#Salah. Analisis fisika suhu prosesor (Thermal Analysis) tidak berkaitan dengan disiplin ilmu manajemen ruang lingkup estimasi ukuran pengembangan rekayasa lunak.
+~FPA berfungsi menghitung dan mendeteksi total frekuensi pengguna yang mengarahkan tanda panah (*mouse pointer*) pada ikon tertentu di antarmuka sistem.#Ini adalah deskripsi fitur pelacakan analitik pengunjung (*Heatmap Tracking*), bukan fungsi matematis estimasi metrik ukuran kompleksitas fase *development*.
+~FPA digunakan untuk mengkalkulasi selisih kerugian moneter total akibat fluktuasi nilai tukar mata uang asing pada transaksi lintas negara di aplikasi dompet digital.#Keliru. Kalkulasi risiko fluktuasi nilai tukar forex komersial adalah ranah akuntansi valuta, bukan ranah penentuan bobot ukuran pengembangan sistem perangkat lunak.
+}
+
+// Soal 58
+::Domain 3 - Gantt Chart::
+Manajer Proyek TI sering mempresentasikan jadwal kerja dalam bentuk *Gantt Chart*. Apa karakteristik pemahaman visual utama yang membuat diagram ini sangat populer digunakan untuk melaporkan status ke dewan manajemen? {
+=Gantt Chart secara intuitif memvisualisasikan seluruh daftar kegiatan proyek pada kalender garis waktu mendatar (timeline horizontal), sehingga sangat memudahkan eksekutif melihat persentase progres, tumpang tindih durasi, serta jadwal mulai dan selesai setiap tugas secara sekilas.#Benar! Bentuknya yang seperti balok kalender memanjang ke kanan membuatnya sangat ramah mata bagi para petinggi bisnis (non-teknis) untuk mengecek apakah kita sudah telat (behind schedule) atau tidak.
+~Gantt Chart menampilkan rumus aljabar linear tiga dimensi (*3D*) yang sangat rumit untuk membingungkan auditor eksternal agar mereka tidak banyak bertanya tentang jadwal yang meleset.#Sangat keliru. Tujuan dokumentasi proyek adalah komunikasi transparan, bukan instrumen manipulasi untuk mengecoh fungsi pengawasan dan tata kelola transparansi.
+~Gantt Chart hanya memetakan hubungan hierarki status jabatan manajerial mulai dari direktur utama hingga staf kebersihan kantor terbawah di area pusat data.#Salah. Itu adalah fungsi murni dari Bagan Struktur Organisasi (*Organizational Chart*), tidak ada hubungannya dengan pelacakan pelaporan jadwal berjalannya fase pengembangan.
+~Gantt Chart secara otomatis mentransfer uang pembayaran ke rekening vendor pihak ketiga setiap kali satu blok kode aplikasi selesai diuji bebas galat (bug-free).#Keliru. *Gantt Chart* hanyalah diagram lukisan representasi visual pelaporan logistik waktu, bukan program aplikasi terintegrasi pembayaran perbankan otomatis (*Fintech*).
+}
+
+// Soal 59
+::Domain 3 - Audit Migrasi Data (Data Migration)::
+Saat sistem *legacy* (lama) dimatikan dan digantikan sistem ERP baru, triliunan *byte* data historis diwariskan ke pangkalan data baru. Pada fase ini, auditor SI menaruh kewaspadaan ekstra terhadap prosedur Migrasi Data. Apa dua pilar pemahaman utama yang selalu diverifikasi auditor dalam proses ini? {
+=Kelengkapan (Completeness) dan Integritas (Integrity) data; memastikan bahwa tidak ada satu baris data pun yang tertinggal, serta tidak ada nilai data yang berubah, terpotong, atau korup saat ditranslasikan ke struktur tabel format sistem yang baru.#Sangat analitis! Memindahkan data itu seperti memindahkan barang pecah belah. Auditor harus memastikan tidak ada kardus yang tertinggal di rumah lama (Lengkap), dan tidak ada barang yang pecah saat dibuka di rumah baru (Integritas).
+~Warna *font* (*typography*) dan ketebalan baris tabel pangkalan data di layar monitor, guna memastikan laporan keuangan dicetak dengan gaya estetika yang lebih modern dan trendi.#Salah. Basis data hanya menampung deret angka mentah; pernak-pernik dekorasi tampilan estetis bukanlah perhatian fundamental pengauditan tingkat risiko tinggi.
+~Memverifikasi bahwa vendor perangkat lunak baru tersebut telah menghapus nama hak cipta dari vendor lama di semua buku manual operasional tercetak untuk menghindari sengketa periklanan komersial.#Keliru. Sengketa merek dagang percetakan buku di luar ranah migrasi bit komputasional. Perhatian auditor adalah akurasi pemindahan struktur relasi transaksi data di dalam pangkalan data.
+~Menjamin bahwa ukuran fisik keping piringan keras (*hard disk drive*) tempat penampungan sistem baru memiliki warna yang seragam dengan warna tembok arsitektur ruangan peladen utama demi mematuhi tata letak feng shui ruangan.#Sangat tidak masuk akal. Ini sama sekali bukan konsep standar kendali keamanan integritas TI, melainkan takhayul estetika tata letak interior sipil bangunan fisik.
+}
+
+// Soal 60
+::Domain 3 - Bottom-Up vs Top-Down Testing::
+Dalam fase *Integration Testing* (Pengujian Integrasi), tim pengembang dapat memilih pendekatan *Bottom-Up* atau *Top-Down*. Bagaimana Anda secara logis memahami perbedaan konsekuensi dari strategi integrasi *Bottom-Up*? {
+=Pada Bottom-Up, pengujian dimulai dari modul independen terkecil/terbawah terlebih dahulu lalu dirangkai ke atas, sehingga sangat efisien mendeteksi *bug* di lapisan paling dasar (core/database) lebih dini, walau model fungsional utuh baru terlihat menjelang proyek berakhir.#Benar! Analoginya seperti membangun rumah dari pondasi ke atap. Kita tahu pondasinya kokoh sejak awal, tapi pemilik rumah baru bisa melihat bentuk utuh rumahnya saat atap (tampilan antarmuka atas) selesai di akhir proyek.
+~Pada Bottom-Up, pengujian diawali dari layar antarmuka pengguna tertinggi lalu bergerak ke bawah basis data, menggunakan *stubs* (potongan kode palsu) sebagai pengganti fungsi layar teratas yang belum ada.#Salah. Ini adalah deskripsi yang tertukar. Memulai dari layar utama lalu ke bawah adalah metodologi *Top-Down Integration Testing*, bukan pendekatan integrasi dari lantai dasar (*Bottom-Up*).
+~Pendekatan Bottom-Up berarti manajer puncak (Top Management) sama sekali tidak diizinkan mendanai proyek sampai staf terbawah (*Bottom Staff*) memotong gaji mereka sendiri sebagai modal patungan komersial pembiayaan perangkat lunak.#Sangat absurd dan terbalik secara logika organisasi bisnis finansial. Istilah ini murni berkaitan dengan arah metodologi perangkaian kode perangkat lunak, bukan tentang aliran patungan biaya modal kerja.
+~Pendekatan Bottom-Up digunakan secara eksklusif untuk mengebor fondasi beton fasilitas *Data Center* ke dalam tanah guna mencari jalur pipa air yang bocor tanpa merusak plafon ruang rapat di atasnya.#Keliru. Integrasi perangkat lunak sama sekali terlepas dari masalah teknis perbaikan pipa sirkulasi utilitas fasilitas gedung mekanis (*Facility Management*).
+}

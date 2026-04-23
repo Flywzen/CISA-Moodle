@@ -1,8 +1,8 @@
 # CISA-Moodle
 Semua soal dalam repositori ini menggunakan format GIFT (General Import Format Technology). Ini adalah format standar yang bisa langsung di-import ke berbagai Learning Management System (LMS), terutama Moodle.
 
-Langkah-langkah Import:
-Buka kursus Anda di Moodle.
+Langkah-langkah Import ke Moodle
+
 
 Pilih Question Bank > Import.
 

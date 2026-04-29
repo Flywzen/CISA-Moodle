@@ -1,13 +1,4 @@
 
-// Soal 2
-::Fungsi Piagam Audit (Audit Charter)::
-Dokumen fundamental apa yang secara resmi menetapkan peran, tanggung jawab, independensi, serta kewenangan fungsi audit Sistem Informasi internal di dalam sebuah organisasi? {
-=Piagam Audit (Audit Charter) yang diotorisasi dan disetujui secara resmi oleh dewan direksi atau komite audit.#Benar! Audit Charter adalah "konstitusi" tertinggi yang secara resmi memberikan wewenang, ruang lingkup, dan jaminan independensi kepada fungsi audit di dalam organisasi.
-~Rencana Audit Tahunan (Annual Audit Plan) yang disetujui secara sepihak oleh manajer operasional IT.#Kurang tepat. Rencana audit tahunan berisi jadwal kegiatan audit, bukan dasar legal yang memberikan mandat kewenangan.
-~Buku Panduan Kontrol Internal (Internal Control Manual) yang diterbitkan oleh departemen keamanan siber.#Salah. Ini adalah dokumen pedoman operasional dari manajemen, bukan dokumen mandat untuk auditor.
-~Laporan Penilaian Risiko (Risk Assessment Report) bulanan yang dibuat oleh staf kepatuhan (compliance).#Keliru. Laporan risiko adalah hasil analisis berkala operasional, bukan piagam tata kelola fungsi audit.
-}
-
 // Soal 3
 ::Kategori Kontrol Teknis (Logical Controls)::
 Berdasarkan klasifikasi kontrol dalam audit (manajemen, teknis, dan fisik), manakah dari pernyataan berikut yang paling tepat mendeskripsikan kontrol teknis (logical controls)? {

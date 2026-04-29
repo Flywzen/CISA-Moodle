@@ -1,11 +1,3 @@
-// Soal 1
-::Peran Auditor dalam CSA::
-Dalam pelaksanaan Control Self-Assessment (CSA), apa peran utama dari seorang auditor Sistem Informasi berdasarkan kerangka kerja tata kelola TI? {
-=Sebagai fasilitator independen yang membantu pemilik proses bisnis mendefinisikan dan menilai efektivitas kontrol mereka sendiri.#Tepat sekali! Dalam pendekatan CSA, kepemilikan kontrol tetap berada di tangan manajemen, sedangkan auditor hanya bertindak sebagai fasilitator yang memandu proses evaluasi.
-~Sebagai pembuat keputusan akhir dalam menentukan kontrol teknis mana yang harus diimplementasikan pada sistem operasional.#Kurang tepat. Manajemen operasional-lah yang bertanggung jawab dan membuat keputusan akhir atas kontrol, bukan auditor.
-~Sebagai pihak yang mengambil alih tanggung jawab manajemen atas pelaksanaan operasi bisnis sehari-hari agar bebas dari risiko.#Salah. Jika auditor mengambil alih tanggung jawab manajemen, hal tersebut akan melanggar prinsip independensi auditor secara fatal.
-~Sebagai pembuat kode program (programmer) untuk memperbaiki kelemahan kontrol aplikasi yang ditemukan selama penilaian.#Keliru. Auditor tidak boleh ikut merancang atau memperbaiki sistem yang diauditnya karena melanggar prinsip pemisahan tugas (segregation of duties).
-}
 
 // Soal 2
 ::Fungsi Piagam Audit (Audit Charter)::

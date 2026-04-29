@@ -1,14 +1,4 @@
 
-// Soal 3
-::Kategori Kontrol Teknis (Logical Controls)::
-Berdasarkan klasifikasi kontrol dalam audit (manajemen, teknis, dan fisik), manakah dari pernyataan berikut yang paling tepat mendeskripsikan kontrol teknis (logical controls)? {
-=Kontrol yang memanfaatkan teknologi, perangkat keras, atau perangkat lunak untuk membatasi dan memantau akses, seperti penggunaan kata sandi dan sistem deteksi intrusi (IDS).#Tepat! Logical controls (kontrol logis/teknis) menggunakan sistem IT untuk mengelola dan membatasi akses ke dalam sistem dan data.
-~Kontrol yang berkaitan dengan operasi fungsi bisnis harian, seperti program pelatihan karyawan dan kebijakan pemisahan tugas (segregation of duties).#Ini adalah deskripsi untuk kontrol administratif atau kontrol manajemen (administrative/management controls).
-~Kontrol yang dipasang secara mekanis untuk membatasi akses fisik ke fasilitas krusial, seperti lencana akses pintar dan kamera CCTV beresolusi tinggi.#Ini adalah penjelasan dari kontrol fisik (physical controls), yang melindungi infrastruktur secara wujud nyata.
-~Kontrol yang berfokus semata-mata pada pelaporan keakuratan keuangan dan peninjauan kebijakan asuransi perusahaan.#Ini terlalu sempit dan lebih mengarah pada kontrol finansial bisnis, bukan definisi umum kontrol teknis IT.
-}
-
-// Soal 4
 ::Tujuan Pengujian Kepatuhan (Compliance Testing)::
 Manakah dari pernyataan berikut yang paling akurat menjelaskan tujuan utama dilakukannya pengujian kepatuhan (compliance testing) oleh seorang auditor SI? {
 =Untuk menguji dan memastikan bahwa kontrol internal (seperti proses otorisasi) telah diimplementasikan dengan benar dan diterapkan secara konsisten.#Benar! Compliance testing bertujuan untuk membuktikan "apakah kontrol yang sudah dirancang benar-benar dipatuhi dan dijalankan?".
